@@ -10,6 +10,7 @@ let package = Package(
     .library(name: "THEOplayerGoogleIMAIntegration", targets: ["THEOplayerGoogleIMAIntegration"]),
     .library(name: "THEOplayerGoogleCastIntegration", targets: ["THEOplayerGoogleCastIntegration"]),
     .library(name: "THEOplayerSDK", targets: ["THEOplayerSDK"]),
+    .library(name: "THEOplayerTHEOliveIntegration", targets: ["THEOplayerTHEOliveIntegration"]),
   ],
   targets: [
     .binaryTarget(
@@ -26,6 +27,11 @@ let package = Package(
       name: "THEOplayerSDK",
       url: "https://cdn.theoplayer.com/build/sdk-apple/8.5.1/THEOplayerSDK.xcframework.zip",
       checksum: "f31b6545dbff97fa76de7d6c751fbe7938fb11444ca0439d3deae62e7994345a"
+    ),
+    .binaryTarget(
+      name: "THEOplayerTHEOliveIntegration",
+      url: "https://cdn.theoplayer.com/build/sdk-apple/8.6.0/THEOplayerTHEOliveIntegration.xcframework.zip",
+      checksum: "58e6747f0dc538a130ba5dcf1f14c62e4024b76e68fd1e027e505d57b0d332db"
     ),
   ]
 )
